@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(https://www.mcmiddleearth.com/community/media/road.3756/full);
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+
+img{
+    width: 220px;
+   position:absolute;
+    
+    bottom:5px ;
+/* o nome da aminação em questão */
+    animation-name: running ;
+    /*duração da animação */
+    animation-duration: 1s ;
+    /*quantas vezes essa animação irá ocorrer. */
+    animation-iteration-count:infinite;
+/*Função da animção
+ease= suavização da animação. com "in" sendo no começo, "out" no final e "in-out" durante o todo.
+linear= animação sem suavização*/
+/*animation-timing-function: linear;*/
+animation-play-state: running;
+animation-direction: alternate;
+animation-delay: 1s;
+}
+
+
+/* img:hover{
+    animation-play-state: running;
+
+
+
+}
+ */
+
+
+
+ /* parte da animação em si*/
+@keyframes running {
+    from{
+        transform: translateX(0);
+       
+
+    }
+
+
+    to{
+        transform: translateX(100vw) translateY(-100vh);
+        
+
+
+    }
+
+}
